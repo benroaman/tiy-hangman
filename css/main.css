@@ -1,0 +1,212 @@
+/*812b16 - brown        373737 - dark grey
+f0b03a - yellow         646464
+4f71b6 - blue           a3a3a3
+e9e1c4 - tan            d8d8d8
+e9e1c4 - off-white      f3f3f3*/
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 85%;
+  min-width: 665px;
+  max-width: 860px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: monospace;
+  text-align: center;
+  background: #373737;
+  color: white;
+}
+
+.block {
+  /*border: 1px dashed white;*/
+  margin: 10px;
+  padding: 3px;
+}
+
+.top-block {
+  margin-bottom: 0;
+}
+
+.gameplay-block {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.title-text {
+  font-size: 3em;
+  font-weight: normal;
+}
+
+.title-pretext {
+  font-weight: normal;
+}
+
+.title-instructions {
+  font-weight: normal;
+  font-size: 1.2em;
+
+}
+
+.remaining-failure-block,
+.current-failure-block {
+  margin-bottom: 1em;
+  font-size: 1.5em;
+}
+
+.button {
+  font-family: monospace;
+  font-style: oblique;
+  padding: .2em .3em;
+  background: #f5f5f3;
+  color: #373737;
+  font-size: 1.75em;
+  border: .1em solid #f0b03a;
+  border-radius: .2em;
+  box-shadow: inset 0 0 .75em #373737;
+}
+
+.main-block {
+  margin-top: 0;
+}
+
+.category-button {
+  font-size: 1.5em;
+}
+
+.button + .button {
+  margin-left: 1.2em;
+}
+
+.category-display {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 1em;
+  font-size: 1.75em;
+  text-align: center;
+  /*border: 2px dashed 373737;*/
+}
+
+.progress-display {
+  display: inline-block;
+  white-space: pre;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1em;
+  padding: 1.25em;
+  font-family: monospace;
+  font-size: 1.5em;
+  text-align: center;
+  border: 4px solid #f0b03a;
+  border-radius: 1em;
+  box-sizing: content-box;
+  vertical-align: middle;
+}
+
+.remaining-failure-display,
+.remaining-failure-label,
+.current-failure-label,
+.current-failure-display {
+  display: inline-block;
+}
+
+/*body {
+  background: #f3f3f3;
+  padding: 1em;
+  font-family: avenir;
+  min-width: 882px;
+}
+
+.title-pretext,
+.title-instructions {
+  font-weight: normal;
+}
+
+.title-instructions {
+  font-size: 1em;
+}
+
+.title-block {
+  width: 250px;
+}
+
+.category-button {
+  float: right;
+}
+
+.progress-display {
+  white-space: pre;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: monospace;
+  font-size: 1.5em;
+  height: 2em;
+  width: 30em;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 1em;
+  box-sizing: content-box;
+  vertical-align: middle;
+}
+
+.block {
+  border: 1px dashed black;
+}
+
+.title-block {
+  display: inline-block;
+}
+
+.category-selection-block {
+  display: inline-block;
+  width: 100%;
+}
+
+.hangman-graphic-display {
+  display: inline-block;
+  width: 250px;
+  height: 400px;
+  border: 2px solid #5D5D73;
+}
+
+.gameplay-block {
+  display: inline-block;
+  height: 400px;
+  vertical-align: top;
+}
+
+.button {
+  font-family: "avenir";
+  font-style: oblique;
+  padding: .1em .2em;
+  background: gold;
+  color: #373737;
+  font-size: 1.5em;
+  border: .1em solid #373737;
+  border-radius: .2em;
+  box-shadow: inset 0 0 .5em #f0b03a;
+}
+
+.remaining-guesses-display,
+.remaining-guesses-label,
+.failure-label,
+.failure-display {
+  display: inline-block;
+}
+
+.guess-box {
+  border: 2px dashed #5D5D73;
+  height: 3em;
+  width: 3em;
+  margin-right: 2em;
+  text-align: center;
+}
+*/
+/*<div class="hangman-graphic-display">
+<span class="hangman-graphic-headarms"></span>
+<span class="hangman-graphic-bodylegs"></span>
+</div>*/

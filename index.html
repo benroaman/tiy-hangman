@@ -1,0 +1,75 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Hangman</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+  </head>
+  <body>
+
+    <div class="block top-block">
+
+      <div class="block title-block">
+        <h3 class="title-pretext">reasonably sarcastic</h3>
+        <h1 class="title-text">- Stringman -</h1>
+        <h2 class="title-instructions">try not to get me killed...</h2>
+      </div>
+
+      <div class="block category-selection-block">
+        <button value ="0" onclick="setcategory(this.value)" class="button category-button">Movies</button>
+        <button value ="1" onclick="setcategory(this.value)" class="button category-button">TV Shows</button>
+        <button value ="2" onclick="setcategory(this.value)" class="button category-button">Bands</button>
+        <button value ="3" onclick="setcategory(this.value)" class="button category-button">People</button>
+      </div>
+
+    </div>
+
+    <div class="block main-block">
+
+      <!-- <div class="hangman-graphic-display">
+        <div class="hangman-graphic-headarms"></div>
+        <span class="hangman-graphic-bodylegs"></span>
+      </div> -->
+
+      <div class="block gameplay-block">
+
+          <div class="category-display">select a category to play...</div>
+          <div class="progress-display">???</div>
+          <br /> <!--cheating-->
+          <div class="remaining-failure-block">
+            <div class="remaining-failure-label">Remaining Failures:</div>
+            <div class="remaining-failure-display"></div>
+          </div>
+          <div class="current-failure-block">
+            <div class="current-failure-label">Current Failures:</div>
+            <div class="current-failure-display"></div>
+          </div>
+
+        <div class="block guess-block">
+          <input type="text" maxlength="1" class="guess-box" onchange="setGuess(this.value)" placeholder="?"/>
+          <button class="button guess-button" onclick="checkGuess()">Guess!</button>
+        </div>
+
+        <div class="block guess-block">
+          <input type="text" class="solution-box" onchange="setSolution(this.value)" placeholder="???"/>
+          <button class="button answer-button" onclick="checkSolution()">Solve!</button>
+        </div>
+
+      </div>
+
+    </div>
+
+    <script src="js/phrases.js"></script>
+    <script src="js/main.js"></script>
+
+  </body>
+</html>
+
+<!-- <form class="block guess-block" onsubmit="return checkGuess()">
+<input type="text" maxlength="1" class="guess-box" onchange="setGuess(this.value)" placeholder="?"/>
+<button class="button guess-button">Guess!</button>
+</form>
+
+<form class="block guess-block" onsubmit="return checkSolution()">
+<input type="text" class="solution-box" onchange="setSolution(this.value)" placeholder="???"/>
+<button class="button answer-button">Solve!</button>
+</form> -->
